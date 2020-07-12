@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 #pragma warning(disable:4996)	//scanf를 썼을 때 보안상의 이유로 컴파일 거부되는 것을 무시(?)하는 코드. (scanf_s 안써도 됨)
 #define MAXNUM 9999
@@ -190,7 +191,6 @@ void main() {
 	for (int i = 0; i < 5; i++) {
 		printf("%c", data2[i]);		//또는 printf("%s", data2);   로 해도 됨.
 	}
-	*/
 
 
 
@@ -205,6 +205,51 @@ void main() {
 	printf("변경 전 i의 값 : %d\n", i);
 	*x = 20;
 	printf("변경 후 i의 값 : %d\n", i);
+	*/
+
+
+
+//구조체 : java 등의 객체지향프로그래밍 언어에서 class의 전신으로 보면 됨.
+//			배열이 같은 데이터타입의 집합이라 한다면, 구조체는 그를 포함하여, 다른 데이터타입의 집합이라 할 수 있음.
+	//구조체 기본 예시
+
+	struct myInfo {		//구조체 정의
+		char name[10];
+		int age;
+		short height;
+		short weight;
+	};
 	
+	struct myInfo horingring;
+	strcpy(horingring.name,"홍길동");
+	horingring.age = 25;
+	horingring.height = 180;
+	horingring.weight = 70;
+
+	printf("이름 : %s\n", horingring.name);
+	printf("나이 : %d\n", horingring.age);
+	printf("키 : %d\n", horingring.height);
+	printf("몸무게 : %d\n", horingring.weight);
 	
+
+
+	//두 지점 사이 거리 구하기
+	struct point {
+		int x;
+		int y;
+	};
+
+	struct point p1, p2;
+	printf("p1의 좌표를 입력하세요 : ");
+	scanf("%d %d", &p1.x, &p1.y);
+	printf("p1의 좌표 : %d, %d\n", p1.x, p1.y);
+	printf("p2의 좌표를 입력하세요 : ");
+	scanf("%d %d", &p2.x, &p2.y);
+	printf("p2의 좌표 : %d, %d\n", p2.x, p2.y);
+
+	int subtractX = p1.x - p2.x;
+	int subtractY = p1.y - p2.y;
+	double distinct = sqrt(subtractX*subtractX+subtractY*subtractY);
+
+	printf("두 지점 사이의 거리 : %lf\n", distinct);
 }
