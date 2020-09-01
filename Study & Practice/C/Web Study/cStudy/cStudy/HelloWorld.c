@@ -205,16 +205,7 @@ void main() {
 	printf("변경 전 i의 값 : %d\n", i);
 	*x = 20;
 	printf("변경 후 i의 값 : %d\n", i);
-	
-
-
-//배열과 포인터
-//배열은 일종의 포인터 같은 것이라 한다.
-//원래 일반 변수의 경우, printf로 변수명을 출력하면, 그 값이 나오지만,
-//배열 변수의 경우, printf로 변수명을 출력하면, 그 주소값(index [0]의 주소값)이 나온다.
-	int arr[5] = { 0, };
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n", *arr, arr, &arr[0], &arr[1], &arr[2], &arr[3], &arr[4]);
-	//0, arr[0]의 주소, arr[0]의 주소, arr[1]의 주소, arr[2]의 주소, ..., arr[4]의 주소		가 출력됨.
+	*/
 
 
 
@@ -261,78 +252,4 @@ void main() {
 	double distinct = sqrt(subtractX*subtractX+subtractY*subtractY);
 
 	printf("두 지점 사이의 거리 : %lf\n", distinct);
-	
-	
-
-	//구조체 간의 비교 예시( -> 직접적인 비교는 불가능)
-	struct point2 {
-		int x;
-		int y;
-	};
-
-	struct point2 p11, p22;
-	p11.x = 10;
-	p11.y = 20;
-
-	p22.x = 10;
-	p22.y = 20;
-
-
-		//	if (p11 == p22) {
-		//		printf("p11과 p22는 같습니다");
-		//	}
-		//위의 비교문은 적절하지 않다. struct 변수 자체의 비교는 불가능하다.
-		//따라서 그 내용을 통해 비교하여야 한다.
-	if ((p11.x == p22.x) && (p11.y == p22.y)) {
-		printf("p11과 p22는 같습니다");
-	}
-	
-
-
-	//정보처리기능사 실기 대비 공부
-	//switch문에 break가 없을 때
-	switch (2) {
-		case 3:printf("1");
-		case 2:printf("2");
-		case 1:printf("3");
-	}
-	
-
-
-	int sum = 0;
-	for (int i = 1; i <= 10; ++i) {
-		sum += i;
-	}
-
-	//for (int i = 1; i <= 10; i++) {
-	//	sum += i;
-	//}								//for문에서 ++i와 i++의 결과가 같더라..?? 원래 항상 마지막에 실행되는 건가?
-
-	printf("%d",sum);
-	
-
-
-	//포인터와 배열 타입에 따른 +i값 실적용
-	int a[5];
-	int i;
-	int* p;
-	for (i = 0; i < 5; i++) {
-		a[i] = i + 10;
-	}
-	p = a;
-	for (i = 0; i < 5; i++) {
-		printf("%d ", (p + i));
-	}
-	
-
-
-	//%s의 출력형식
-	char* str;
-	str = "KOREA";
-	printf("%8.3s", str);
-	*/
-
-	//자리수 test (%3d 와 같은 것)
-	int a = 3;
-	printf("%3d", a);
 }
