@@ -10,36 +10,38 @@
     </script>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
+  <body class="chats-body">
+    <div class="header-Wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">13:54</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+      <header class="header">
+        <div class="header__header-column">
+          <a class="header__back-btn" href="./index.html">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">상범이</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <a class="header__back-btn" href="./index.html">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-        <h1 class="header__title">상범이</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-    </header>
-    <main class="chat">
+    <main class="chat main-padding-top">
       <ul class="chat__messages">
         <span class="chat__timestamp">Monday, September 1, 2020</span>
         <li class="incoming-message message">
@@ -63,17 +65,17 @@
       </ul>
     </main>
     <div class="chat__write">
-      <div class="chat__write__column">
+      <div class="chat__write-column">
         <i class="far fa-plus-square"></i>
       </div>
-      <div class="chat__write__column">
+      <div class="chat__write-column">
         <input
           class="chat__write-input"
           type="text"
           placeholder="Send message"
         />
       </div>
-      <div class="chat__write__column">
+      <div class="chat__write-column">
         <span class="chat__write-icon">
           <i class="far fa-smile-wink"></i>
         </span>
