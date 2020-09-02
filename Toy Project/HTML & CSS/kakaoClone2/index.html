@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/2bd277a18a.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <div class="status-bar">
@@ -42,19 +43,23 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="./chat.html">
-            <div class="chat__column">
-              <img
-                class="chat__avatar g-avatar"
-                src="./images/human.jpg"
-                alt="profileImg"
-              />
-              <div class="chat__content">
-                <span class="chat__username"> Lynn </span>
-                <span class="chat__preview">집에 가는중이야</span>
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img
+                  src="./images/human.jpg"
+                  alt="My profile"
+                  class="friends__avatar m-avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">Lynn</span>
+                  <span class="friend__bottom-text">집에 가는중이야</span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <div class="friend__column">
+                <div class="friend__now-listening">
+                  <span class="chat__timestamp">Yesterday</span>
+                </div>
+              </div>
             </div>
           </a>
         </li>
@@ -69,6 +74,7 @@
         </li>
         <li class="nav__list-item">
           <a href="./index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
