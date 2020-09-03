@@ -41,25 +41,44 @@
         </div>
       </header>
     </div>
-    <main class="chat main-padding-top">
+    <main class="chat-screen main-padding-top">
+      <div class="height100"></div>
       <ul class="chat__messages">
-        <span class="chat__timestamp">Monday, September 1, 2020</span>
+        <span class="chat__timestamp">Monday,&nbsp;&nbsp;September 1,&nbsp;&nbsp;2020</span>
         <li class="incoming-message message">
           <img
             class="m-avatar friends__avatar"
             src="./images/human.jpg"
             alt=""
           />
-          <div class="message__content">
-            <span class="message__author">상범이</span>
-            <div class="message__bubble">뭘봐 이냔아</div>
+          <div class="message__content__incoming">
+            <div class="message__author">상범이</div>
+            <div class="bubbleNtime__incoming">
+              <div class="message__bubble incoming-message__bubble">뭘봐 이냔아</div>
+              <div class="message__timestamp__incoming">20:03</div>
+            </div>
           </div>
-          <span class="message__timestamp">20:03</span>
         </li>
         <li class="incoming-message message">
-          <div class="message__content">
-            <span class="message__timestamp">20:05</span>
-            <div class="message__bubble">오우 쉣</div>
+          <img
+            class="m-avatar friends__avatar"
+            src="./images/human.jpg"
+            alt=""
+          />
+          <div class="message__content__incoming">
+            <div class="message__author">상범이</div>
+            <div class="bubbleNtime__incoming">
+              <div class="message__bubble incoming-message__bubble">뭘봐 이냔아</div>
+              <div class="message__timestamp__incoming">20:03</div>
+            </div>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content__sent">
+            <div class="bubbleNtime__sent">
+              <div class="message__timestamp__sent">20:05</div>
+              <div class="message__bubble sent-message__bubble">오우 쉣</div>
+            </div>
           </div>
         </li>
       </ul>

@@ -36,6 +36,7 @@ a {
   box-sizing: border-box;
 }
 
-.main-padding-top {
-  padding-top: 100px;
+.height100 {
+  width: 100%;
+  height: 100px;
 }
