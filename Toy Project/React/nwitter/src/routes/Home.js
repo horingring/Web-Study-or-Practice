@@ -47,7 +47,7 @@ const Home = ({ userObj }) => {
           <Nweet
             keys={nweet.id}
             nweetObj={nweet}
-            isOwner={nweet.creatorId === userObj}
+            isOwner={nweet.creatorId === userObj.uid}
           />
         ))}
       </div>
