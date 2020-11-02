@@ -1,9 +1,11 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import MyComponent from './MyComponent';
+import MyClassComponent from './MyClassComponent';
+import EventPractice from './EventPractice';
+import './App.css';
 
-function App() {
-  const name = undefined;
-  return <div className="react">{name || "Undefined입니다."}</div>;
-}
+const App = () => {
+  return <EventPractice />;
+};
 
 export default App;
