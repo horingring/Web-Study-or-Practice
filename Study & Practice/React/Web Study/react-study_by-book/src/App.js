@@ -1,11 +1,10 @@
-import React from 'react';
-import MyComponent from './MyComponent';
-import MyClassComponent from './MyClassComponent';
-import EventPractice3 from './EventPractice3';
-import './App.css';
+import React, { Component } from 'react';
+import ValidationSample from './ValidationSample';
 
-const App = () => {
-  return <EventPractice3 />;
-};
+class App extends Component {
+  render() {
+    return <ValidationSample />;
+  }
+}
 
 export default App;
