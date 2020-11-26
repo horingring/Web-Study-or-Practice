@@ -1,8 +1,8 @@
 import React from "react";
-import InfoUseReducer from "./InfoUseReducer";
+import Average from "./Average";
 
 const App = () => {
-  return <InfoUseReducer />;
+  return <Average />;
 };
 
 export default App;
