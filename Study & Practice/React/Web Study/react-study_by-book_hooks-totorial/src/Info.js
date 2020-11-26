@@ -4,9 +4,13 @@ const Info = () => {
   const [name, setName] = useState("");
   const [nickname, setNickname] = useState("");
   useEffect(() => {
-    console.log("name이 변경될 때만 실행됩니다!");
-    console.log("name : ", name);
-  }, [name]);
+    console.log("effect");
+    console.log(name);
+    return () => {
+      console.log("cleanup");
+      console.log(name);
+    };
+  }); //  },[]);    --> 이렇게 하면 언마운트 시에만 cleanup이 나타남.
 
   const onChangeName = (e) => {
     setName(e.target.value);
